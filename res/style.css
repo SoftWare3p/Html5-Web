@@ -58,7 +58,13 @@ body{
     display: inline-block;
     font-size: 13px !important;
 }
-
+#ms-nav li a{
+    position: relative;
+    border: 1px solid transparent;
+    margin-top: 1px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
 ul{
     padding: 0;
     list-style: none;
@@ -75,7 +81,7 @@ ul{
     padding-left: 1px;
     padding-right: 1px;
 }
-.ms-button{
+#ms-button{
     padding-right: 20px;
     margin-right: 0px;
     padding: 16px 30px 16px 12px;
@@ -84,7 +90,7 @@ ul{
     text-align: left;
     position: relative;
 }
-.ms-button:after{
+#ms-button:after{
     font-family: "MWF-MDL2";
     content: "\e70d";
     position: absolute;
@@ -94,4 +100,35 @@ ul{
     font-weight: 700;
     padding-top: 7px;
     right: 5px;
+}
+#ms-button-menu1{
+    display:none;
+    background: #f2f2f2;
+}
+#ms-button:focus{
+    background: #f2f2f2;
+    float:left;
+}
+
+#ms-button:active #ms-button-menu1,#ms-button:focus + #ms-button-menu1{
+    display:block;
+    
+}
+#ms-header li a:before, #ms-button :before{
+    bottom: 9px;
+    width: calc(100% - 16px);
+    content: "";
+    height: 2px;
+    position: absolute;
+    display: none;
+    background: currentColor;
+    margin:auto;
+    padding-left:8px;
+}
+#ms-header li a:active:before,#ms-header li a:hover:before,#ms-header li a:focus:before ,#ms-button:focus :before,#ms-button:hover :before{
+    display:inline-block;
+}
+
+#ms-menu1-li1{
+    display:none;
 }
