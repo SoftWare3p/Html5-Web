@@ -1,0 +1,54 @@
+#ms-header{
+    height: 54px;
+}
+#ms-header a{
+    padding-top: 16px;
+    padding-right: 6px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+}
+#ms-header > a{
+     
+    margin-top: 1px;
+    width: 137px;
+    border: 0;
+    display: inline-block;
+}
+#ms-nav{
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+img{
+    vertical-align: middle;
+}
+#ms-logo{
+    width: 108px;
+    margin-top: -3px;
+    max-width: none;
+    display:block;
+}
+#ms-content{
+    padding-top: 0px;
+    padding-right: 5%;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    margin-top: 0px;
+}
+
+body{
+    margin:0px;
+    font-family: 'Segoe UI',SegoeUI,'Microsoft YaHei',微软雅黑,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#ms-nav ul li{
+    display: inline-block;
+    font-size: 13px !important;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
