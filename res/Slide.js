@@ -1,7 +1,6 @@
     function my$(id) {
         return document.getElementById(id);
     }
- 
     //获取各元素，方便操作
     var box=my$("ms-slide");
     var inner=box.children[0];
@@ -11,6 +10,7 @@
     var arr=my$("ms-arr");
     var imgWidth=inner.offsetWidth;
     var pic=0;
+    var isplay = true;
     //根据li个数，创建小按钮
     for(var i=0;i<list.length;i++){
         var liObj=document.createElement("li");
@@ -19,7 +19,7 @@
         liObj.setAttribute("index",i);
  
         //为按钮注册mouseover事件
-        liObj.onclick = liObj.onmouseover =function limouseover() {
+        liObj.onclick = function limouseover() {
             //先清除所有按钮的样式
  
             for (var j=0;j<olObj.children.length;j++){
@@ -31,14 +31,29 @@
         }
  
     }
- 
- 
+    
     //设置ol中第一个li有背景颜色
     olObj.children[0].className = "current";
     //克隆一个ul中第一个li,加入到ul中的最后=====克隆
     ulObj.appendChild(ulObj.children[0].cloneNode(true));
  
     var timeId=setInterval(onmouseclickHandle,2000);
+
+    var bObj=document.createElement("button");
+    olObj.appendChild(bObj);
+    bObj.setAttribute("id","slide-stop");
+    bObj.setAttribute("isplay","true");
+    bObj.onclick = function bsetisplay() {
+        isplay = !isplay;
+        if(isplay){
+            timeId=setInterval(onmouseclickHandle,2000);
+            bObj.setAttribute("isplay","true");
+        }
+        else {
+            clearInterval(timeId);
+            bObj.setAttribute("isplay","false");
+        }
+    }
     //左右焦点实现点击切换图片功能
     box.οnmοuseοver=function () {
         arr.style.display="block";
@@ -46,7 +61,7 @@
     };
     box.οnmοuseοut=function () {
         arr.style.display="none";
-        timeId=setInterval(onmouseclickHandle,2000);
+        if(isplay) timeId=setInterval(onmouseclickHandle,2000);
     };
  
     function onmouseclickHandle() {
@@ -62,12 +77,12 @@
         //如果pic==5说明,此时显示第6个图(内容是第一张图片),第一个小按钮有颜色,
         if (pic == list.length - 1) {
             //第五个按钮颜色干掉
-            olObj.children[olObj.children.length - 1].className = "";
+            olObj.children[olObj.children.length - 2].className = "";
             //第一个按钮颜色设置上
             olObj.children[0].className = "current";
         } else {
             //干掉所有的小按钮的背景颜色
-            for (var i = 0; i < olObj.children.length; i++) {
+            for (var i = 0; i < olObj.children.length-1; i++) {
                 olObj.children[i].removeAttribute("class");
             }
             olObj.children[pic].className = "current";
@@ -80,18 +95,18 @@
         }
         pic--;
         animate(ulObj,-pic*imgWidth);
-        for (var i = 0; i < olObj.children.length; i++) {
+        for (var i = 0; i < olObj.children.length-1; i++) {
             olObj.children[i].removeAttribute("class");
         }
         //当前的pic索引对应的按钮设置颜色
         olObj.children[pic].className = "current";
     };
-    
+
     //设置任意的一个元素,移动到指定的目标位置
     function animate(element, target) {
         clearInterval(element.timeId);
         //定时器的id值存储到对象的一个属性中
-        element.timeId = setInterval(function () {
+        element.timeId = setInterval( function () {
             //获取元素的当前的位置,数字类型
             var current = element.offsetLeft;
             //每次移动的距离
@@ -109,3 +124,4 @@
             }
         }, 10);
     }
+    

@@ -118,6 +118,7 @@ ul{
     border-color: rgba(0,0,0,0.05) rgba(0,0,0,0.05) #000;
     margin-top: 22px;
     flex-flow: row wrap;
+    z-index: 1;
 }
 #ms-button:focus{
     background: #f2f2f2;
@@ -157,7 +158,6 @@ ul{
 }
 .ms-menu1-li{
     display: inline-block;
-    float: left;
     padding-bottom: 10px;
     vertical-align: top;
 }
@@ -350,25 +350,33 @@ button, select {
 #ms-slide >div ol {
     position: absolute;
     height: 20px;
-    right: 20px;
+    right: 50%;
     bottom: 20px;
     text-align: center;
     padding: 5px;
     z-index:1;
 }
 #ms-slide >div ol li{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    line-height: 20px;
-    background-color: rgba(255,255,255,0.5);
-    margin: 5px;
-    cursor: pointer;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid;
+    z-index:1;
+    float:left;
+    margin:5px;
+    border-color:black;
 }
 #ms-slide >div ol .current{
-    background-color: red;
+    background-color: black;
 }
-
+#ms-slide >div ol [class = "current"][index = "0"]{
+    background-color: white;
+    border-color:rgba(255,255,255,.8);
+}
+#ms-slide >div ol [class = "current"][index = "0"] + li {
+    border-color:rgba(255,255,255,.8);
+}
 #ms-arr span{   
     position: absolute;
     left: 5px;
@@ -384,25 +392,66 @@ button, select {
     opacity: 0.5;
 }
 
-#ms-arr #right{
+#ms-arr #right,#ms-arr #left{
     display:none;
 }
-#ms-arr #left{
-    display:none;
-}
+
 .ms-slide-bar{
-    display:none;
+    display:block;
 }
-#ms-slide >div:hover .bar{
-    display: block;
-}
-#ms-slide >div:hover #arr #right {
+#ms-slide:hover #ms-arr #right {
     right: 5px;
     left: auto;
     display:block;
 }
-#ms-slide >div:hover #arr #left {
+#ms-slide:hover #ms-arr #left {
     display:block;
+}
+#slide-stop:before{
+    font-family: "MWF-MDL2";
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+[id = "slide-stop"][isplay = "true"]:before{
+    content: "\e331";
+}
+[id = "slide-stop"][isplay = "false"]:before{
+    content: "\e334";
+}
+#slide-stop{
+    background-color:transparent;
+    border: 2px solid transparent;
+    position: relative;
+    top: -11px;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#slide-stop:before{
+    color:white;
+}
+#ms-slide >div ol [class = "current"][index = "1"] + #slide-stop:before{
+    color:black;
+}
+#slide-stop:hover{
+    background-color:white; 
+    cursor:pointer;
+}
+#slide-stop:hover:before{
+    color:black;
+}
+#ms-slide >div ol [class = "current"][index = "1"] + #slide-stop:hover{
+    background-color:black;
+    cursor:pointer;
+}
+#ms-slide >div ol [class = "current"][index = "1"] + #slide-stop:hover:before{
+    color:white;
 }
 .ms-slide-ad{
     border:0;
