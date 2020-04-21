@@ -298,3 +298,223 @@ button, select {
 #ms-reg{
     padding-top: 0px;
 }
+#ms-slide:before, #ms-slide:after{
+    content: " ";
+    display: table;
+}
+#ms-slide{
+    box-sizing: border-box;
+    max-width: calc(1600px + 10%);
+    margin: 0 auto;
+    padding:0;
+    position: relative; 
+    height:auto;
+    white-space: nowrap;
+}
+#ms-slide {
+    width: 100%;
+    border: 0px;
+    margin: 0px auto;
+}
+#ms-slide >div{
+    box-sizing:border-box;
+    width: 100%;
+    height:0;
+    padding-bottom:40%;
+    position: relative;
+    overflow: hidden;
+    display：inline-block;
+}
+#ms-slide >div img{
+    width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+}
+#ms-slide *{
+    box-sizing:border-box;
+}
+#ms-slide >div ul {
+    width: 1000%;
+    position: absolute;
+    list-style: none;
+    left:0;
+    top: 0;
+    padding-inline-start:0px;
+    box-sizing:border-box
+}
+#ms-slide >div li{
+    float: left;
+    width:10%;
+}
+
+#ms-slide >div ol {
+    position: absolute;
+    height: 20px;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    padding: 5px;
+    z-index:1;
+}
+#ms-slide >div ol li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 20px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 5px;
+    cursor: pointer;
+}
+#ms-slide >div ol .current{
+    background-color: red;
+}
+
+#ms-arr span{   
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #fff;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #000;
+    opacity: 0.5;
+}
+
+#ms-arr #right{
+    display:none;
+}
+#ms-arr #left{
+    display:none;
+}
+.ms-slide-bar{
+    display:none;
+}
+#ms-slide >div:hover .bar{
+    display: block;
+}
+#ms-slide >div:hover #arr #right {
+    right: 5px;
+    left: auto;
+    display:block;
+}
+#ms-slide >div:hover #arr #left {
+    display:block;
+}
+.ms-slide-ad{
+    border:0;
+    position: absolute;
+    float:left;
+    width:10%;
+    bottom: 50%;
+    max-width: 520px;
+}
+#msad1{
+    bottom: 60px;
+    transform: translateX(68%);
+}
+#msad1 h2{
+    height:112px;
+    text-align:center;
+    color: #fff;
+    font-size: 46px;
+    line-height: 56px;
+    padding: 30px 0 3px;
+    letter-spacing: -.01em;
+    box-sizing: content-box;
+    font-weight: 600;
+    opacity: .95;
+    width:500px;
+    white-space: normal;
+}
+#msad1 p{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    width: 500px;
+}
+#msad1 a{
+    font-size: 15px;
+    padding: 10px 20px 6px 22px;
+    position: relative;
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
+    outline-offset: -3px;
+    max-width: 100%;
+    display: inline-block;
+    transform: translate(0px,130px);
+    color: #000;
+    background: #fff;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 1.3;
+    white-space: nowrap;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 4px 8px 0 transparent;
+    transform: translate(200px,0px);
+}
+.ms-slide-ad span:after {
+    font-size: 11px;
+    margin-top: 3px;
+    margin-left: 3px;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    content: "\e76c";
+    font-family: "MWF-MDL2";
+    vertical-align: top;
+}
+#msad2{
+    top: calc(10%);
+    transform: translateY(-50%);
+    transform: translateX(12%);
+}
+#msad2 h2{
+    padding-bottom: 3px;
+    padding-top: 2px;
+    font-size: 46px;
+    line-height: 56px;
+    padding: 37px 0 3px;
+    letter-spacing: -.01em;
+    box-sizing: content-box;
+    max-height: 112px;
+    font-weight: 600;
+    opacity: .95;
+    white-space: normal;
+}
+#msad2 p{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000;
+    width: 520px;
+}
+#msad2 a{
+    color: #fff;
+    background: #000;
+    font-size: 15px;
+    padding: 10px 20px 6px 22px;
+    position: relative;
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
+    outline-offset: -3px;
+    max-width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 1.3;
+    white-space: nowrap;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 4px 8px 0 transparent;
+}
