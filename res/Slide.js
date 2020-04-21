@@ -8,7 +8,8 @@
     var list=ulObj.children;
     var olObj=inner.children[1];
     var arr=my$("ms-arr");
-    var imgWidth=inner.offsetWidth;
+    var imgWidth=box.clientWidth - 14.4;
+    console.info(imgWidth);
     var pic=0;
     var isplay = true;
     //根据li个数，创建小按钮
@@ -31,7 +32,7 @@
         }
  
     }
-    
+    box.setAttribute("choseid",1);
     //设置ol中第一个li有背景颜色
     olObj.children[0].className = "current";
     //克隆一个ul中第一个li,加入到ul中的最后=====克隆
@@ -104,6 +105,7 @@
 
     //设置任意的一个元素,移动到指定的目标位置
     function animate(element, target) {
+        box.setAttribute("choseid",pic);
         clearInterval(element.timeId);
         //定时器的id值存储到对象的一个属性中
         element.timeId = setInterval( function () {

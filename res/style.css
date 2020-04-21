@@ -310,11 +310,8 @@ button, select {
     position: relative; 
     height:auto;
     white-space: nowrap;
-}
-#ms-slide {
     width: 100%;
     border: 0px;
-    margin: 0px auto;
 }
 #ms-slide >div{
     box-sizing:border-box;
@@ -393,9 +390,19 @@ button, select {
 }
 
 #ms-arr #right,#ms-arr #left{
+    outline: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
     display:none;
+    font-family: "MWF-MDL2";
+    font-size:15px;
 }
-
+#left,#right:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    
+}
 .ms-slide-bar{
     display:block;
 }
@@ -566,4 +573,28 @@ button, select {
     white-space: nowrap;
     transition: all 200ms ease-in-out;
     box-shadow: 0 4px 8px 0 transparent;
+}
+.ms-ada:hover span{
+    margin-left:-10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ms-ada:hover span:after{
+    margin-left:10px;
+}
+.ms-section1 img{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56%;
+    cursor: pointer;
+}
+.ms-section1 h3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    opacity: .95;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    margin-top: 37px;
 }
