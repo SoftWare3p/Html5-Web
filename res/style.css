@@ -323,7 +323,7 @@ button, select {
     padding-bottom:40%;
     position: relative;
     overflow: hidden;
-    display：inline-block;
+    display:inline-block;
 }
 #ms-slide >div img{
     width: 100%;
