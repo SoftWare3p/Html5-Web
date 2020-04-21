@@ -4,7 +4,7 @@
 }
 
 *{
-    font-family: 'Segoe UI',SegoeUI,'Microsoft YaHei','????',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Segoe UI',SegoeUI,'Microsoft YaHei','微软雅黑',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -21,6 +21,9 @@ html{
     padding-bottom: 16px;
     padding-left: 10px;  
     color: #262626;
+}
+#ms-nav a{
+    text-decoration: none;
 }
 #ms-header > a{
     margin-top: 1px;
@@ -54,7 +57,7 @@ img{
 }
 body{
     margin:0px;
-    font-family: 'Segoe UI',SegoeUI,'Microsoft YaHei','????',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Segoe UI',SegoeUI,'Microsoft YaHei','微软雅黑',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #ms-nav ul li{
     display: inline-block;
@@ -74,6 +77,7 @@ ul{
 #ms-header-right{
     float:right;
     display: flex;
+    height: 54px;
 }
 #ms-header-right div nav{
     margin-right: 15px;
@@ -86,7 +90,6 @@ ul{
 #ms-button{
     padding-right: 20px;
     margin-right: 0px;
-    padding: 16px 30px 16px 12px;
     border: 0;
     background: transparent;
     text-align: left;
@@ -109,12 +112,11 @@ ul{
     width: 1230px;
     border-style: solid;
     border-width: 1px 1px 2px;
-    padding: 0;
-    margin: 0;
+    margin: 15px 0;
     position: absolute;
     margin-left: -789.333px;
     border-color: rgba(0,0,0,0.05) rgba(0,0,0,0.05) #000;
-    margin-top: -2px;
+    margin-top: 22px;
     flex-flow: row wrap;
 }
 #ms-button:focus{
@@ -124,8 +126,19 @@ ul{
     display:block;
     
 }
-#ms-nav li a:before, #ms-button :before{
+#ms-nav li a:before{
     bottom: 9px;
+    width: calc(100% - 16px);
+    content: "";
+    height: 2px;
+    position: absolute;
+    display: none;
+    background: currentColor;
+    margin:auto;
+    padding-left:8px;
+}
+#ms-button :before{
+    bottom: 0px;
     width: calc(100% - 16px);
     content: "";
     height: 2px;
@@ -228,4 +241,60 @@ button, select {
     margin-left: 4px;
     margin-right: 4px;
     display: inline-block;
+}
+
+.ms-menu1-bt:after{
+    font-family: "MWF-MDL2";
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 2px;
+    position: relative;
+    text-indent: 0;
+    vertical-align: sub;
+}
+#search:after{ 
+    content: "\e721";
+}
+#cheche:after{
+    content: "\e7bf";
+}
+#register{
+    background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' stroke='%23707070'%3E%3Cg class='mectrl_stroke' stroke-width='1.9' fill='none'%3E%3Ccircle cx='32' cy='32' r='30.25'/%3E%3Cg transform='matrix(1.1 0 0 1.1 8.8 5.61)'%3E%3Ccircle class='mectrl_stroke' cx='20' cy='16' r='7'/%3E%3Cpath class='mectrl_stroke' d='M30 35h10m-5-5v10M30.833 32.09A11 11 0 009 34'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    border: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    margin-left: 2px;
+    position: relative;
+    text-indent: 0;
+    vertical-align: sub;
+    padding-bottom:9px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.ms-menu1-bt{
+    border: none;
+    padding-top: 18px;
+    position: relative;
+    background: transparent;
+    padding-bottom: 30px;
+    padding-left: 14px;
+    padding-right:14px;
+    width: auto;
+}
+#ms-reg span{
+    vertical-align: top;
+    line-height: 54px;
+    font-family: "Microsoft Yahei UI","Microsoft Yahei",Verdana,Simsun,"Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+    font-size: 13px;
+    
+    padding-right: 4px;
+}
+#ms-reg{
+    padding-top: 0px;
 }
