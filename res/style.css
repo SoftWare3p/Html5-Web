@@ -214,8 +214,7 @@ button, select {
     margin: 0;
     padding: 1px;
     width: 100%;
-    display: inline-block;
-    float: left;
+    display: block;
 }
 #ms-menu1-li2:before,#ms-menu1-li2:after{
     content: " ";
@@ -806,9 +805,12 @@ button, select {
     color: #616161;
     white-space: nowrap;
     text-decoration: none;
+    font-size: 11px;
+    line-height: 16px;
 }
 #ms-copyright a:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 #ms-copyright >a:before{
     font-family: "MWF-MDL2";

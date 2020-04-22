@@ -1,0 +1,346 @@
+#ms-header a{
+    padding-top: 0px;
+    display: inline-block;
+}
+#su-header{
+    overflow: hidden;
+}
+#ms-nav li a ,#ms-button{
+    color: #262626;
+    display: inline-block;
+    margin-top: 1px;
+    padding: 10px 27px 10px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: lighter;
+    border:0px;
+}
+#ms-nav li{
+    transition: margin 0.667s cubic-bezier(0.16, 1, 0.29, 0.99) 0s;
+}
+#ms-nav >ul{
+    margin: 0;
+}
+#ms-header > a {
+    padding-top: 16px;
+}
+#ms-nav li a:before,#ms-button:before {
+    bottom: 12px;
+    width: calc(100% - 54px);
+}
+#ms-button:after {
+    top: 18px;
+}
+#ms-button:before{
+    background: currentColor;
+    content: "";
+    display:none;
+    height: 2px;
+    position: absolute;
+}
+#ms-button:hover:before{
+    display:block;
+    cursor: pointer;
+}
+#ms-button-menu1{
+    margin-top: -2px;
+    margin-left: -689.333px;
+}
+#ms-nav li div a:hover:before{
+    display:none;
+}
+#ms-menu1-li2{
+    text-align: center;
+}
+#ms-button-menu1 a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#search{
+    position: absolute;
+    margin-left: 15%;
+}
+#su-sh-bar{
+    display: inline-block;
+    background: rgba(255,255,255,.2);
+    border-color: rgba(0,0,0,.4);
+    height: 36px;
+    max-width: 100%;
+    width: 264px;
+    padding: 7px 10px;
+    padding-right: 38px;
+    border: 1px solid rgba(0,0,0,.6);
+    outline: 0;
+    margin-top: 8px;
+}
+#su-header-bar{
+    background: #0067b8;
+    float: left;
+    height: 50px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#su-header-bar a{
+    color: #fff;
+    text-decoration: none;
+}
+#su-hbar-1{
+    height: 48px;
+    margin: 1px;
+    padding: 7px 17px;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+#su-hbar-1 span{
+    font-size: 24px;
+    line-height: 28px;
+    display: block;
+    font-weight: 200;
+}
+#su-hbar-nav{
+    overflow: hidden;
+    height: 100%;
+    white-space: nowrap;
+    padding-left: 1px;
+    padding-right: 1px;
+    display: block;
+    position：relative;
+}
+#su-hbar-nav div{
+    display: inline-block;
+    transition: margin 0.667s cubic-bezier(0.16, 1, 0.29, 0.99) 0s;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: lighter;
+}
+#su-hbar-nav div >a{
+    position: relative;
+    padding: 0 38px 0 25px;
+    line-height: 46px;
+    margin: 1px 0;
+    outline-color: transparent !important;
+    outline-style: none !important;
+    border: 1px solid transparent;
+
+}
+#su-hbar-nav div ul{
+    border-color: rgba(0,0,0,.05);
+    border-top-width: 0;
+    margin-top: -1px;
+    background: #005da6;
+    display: none;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    width: 296px;
+    top: 11%;
+    z-index: 700;
+    min-width: 64px;
+    max-width: 368px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: absolute;   
+}
+#su-hbar-nav div ul li{
+    margin-top: 1px;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+#su-hbar-nav li a{
+    position: relative;
+    padding-left: 24px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: block;
+}
+#su-hbar-nav a:hover +ul,#su-hbar-nav a:active +ul{
+    display:block;
+}
+#su-hbar-nav a:hover{
+    text-decoration: underline;
+}
+#su-hbar-nav div:hover,#su-hbar-nav li:hover{
+    background: #005da6;
+}
+.su-a-af-j span:after{
+    font-family: "MWF-MDL2";
+    content: "\e70d";
+    position: absolute;
+    font-size: 8px;
+    display: inline-block;
+    color: currentColor;
+    font-weight: 700;
+    padding-top: 1px;
+    right: 20px;
+}
+#su-search-p{
+    background-image: url("../img/smc-hero.jpg");
+    padding: 80px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 62.5%;
+    display: block;
+    font-weight: lighter;
+}
+#su-search-p >div{
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
+#su-search-p h1{
+    color: #fff;
+    font-family: 'Segoe UI Semibold','wf_segoe-ui_semibold','wf_segoe-ui_normal','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+    font-size: 37.3333px;
+    margin-bottom: 32px;
+    font-weight: lighter;
+}
+#su-search-p form{
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+    max-width: 748px;
+
+}
+#su-search-p form div{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    font-size: 62.5%;
+
+}
+#su-search-p form input{
+    width: 100%;
+    height: 51px;
+    font-size: 20px;
+    padding: 0 50px 0 18px;
+    border: 1px solid #a9a9a9;
+    outline: 0;
+    font-family: 'Segoe UI','Segoe UI Web','wf_segoe-ui_normal','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif;
+    box-sizing: border-box;
+}
+#su-search-p form button{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+#su-search-p form span:before{
+    font-family: "MWF-MDL2";
+    content: "\e339";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    color: #636363;
+}
+#su-class-p *{
+    box-sizing: border-box;
+}
+#su-class-p{
+    max-width: 1600px;
+    margin: auto;
+    box-sizing: border-box;
+}
+#su-class-p >div{
+    margin: 20px auto 20px;
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+#su-class-p >div >div{
+    height: initial;
+    overflow: hidden;
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px;
+}
+.su-class-p{
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+}
+.su-class-p:link, .su-class-p:visited, .su-class-p:active, .su-class-p:hover {
+    color: #363636;
+}
+.su-class-p div:nth-child(1){
+    box-sizing: border-box;
+}
+.su-class-p div:nth-child(2){
+    padding-top: 10px;
+    line-height: 12px!important;
+    box-sizing: border-box;
+}
+.su-class-p img{
+    height: 52px;
+    width: 52px;
+    border: none;
+    box-sizing: border-box;
+}
+.su-class-p span{
+    font-family: 'Segoe UI','Segoe UI Web','wf_segoe-ui_normal','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+.su-class-p:hover{
+    -webkit-box-shadow:0 3px 5px 3px rgba(0,0,0,.1);
+    -moz-box-shadow:0 3px 5px 3px rgba(0,0,0,.1);
+    box-shadow:0 3px 5px 3px rgba(0,0,0,.1);
+}
+#su-class-more{
+    color: #0072c6;
+    margin: 0;
+    padding-top: 18px;
+    text-align: left;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Segoe UI Semibold','wf_segoe-ui_semibold','wf_segoe-ui_normal','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+    font-weight: 400;
+    padding-left: 0;
+    text-decoration: none;
+}
+#su-class-more:hover{
+    text-decoration: underline;
+}
+#su-class-more:after{
+    content: '\e0ae';
+    font-family: "MWF-MDL2";
+    vertical-align: bottom;
+    margin-left: 10px;
+    display: inline-block;
+}
+#su-longques-div{
+    box-sizing: border-box;
+}
+#su-ques-div{
+    width: 90%;
+    overflow: hidden;
+    padding: 0 10px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+#su-ques-div h2{
+    color: #1e1e1e;
+    text-align: center;
+    font-family: 'Segoe UI Semibold','wf_segoe-ui_semibold','wf_segoe-ui_normal','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+}
