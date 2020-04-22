@@ -32,7 +32,7 @@
         }
  
     }
-    box.setAttribute("choseid",1);
+    box.setAttribute("choseid",2);
     //设置ol中第一个li有背景颜色
     olObj.children[0].className = "current";
     //克隆一个ul中第一个li,加入到ul中的最后=====克隆
