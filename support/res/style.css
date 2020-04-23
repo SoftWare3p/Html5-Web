@@ -387,3 +387,167 @@ strong, b{
 #su-video-section{
     background-color: #f9f9f9;
 }
+#su-video-section >div{
+    width: 90%;
+    overflow: hidden;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+#su-video-section >div>div{
+    padding-right: 2%;
+    width: calc((50%) - 3px);
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+#su-video-section video{
+    cursor: pointer;
+    display: block;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    background: #000;
+    vertical-align: middle;
+    direction: ltr;
+
+}
+#su-video-but{
+    background-color: rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+    box-sizing: inherit;
+    position: absolute;
+    top: 0;
+}
+#su-video-but button{
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 13px;
+    height: 48px;
+    width: 48px;
+    color: #FFF;
+    outline: none;
+    top: calc(50%);
+    transform: translateY(-50%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+#su-video-but button:before{
+    margin-left: 10px;
+    margin-right: 10px;
+    content: "\e768";
+    font-family: "MWF-MDL2";
+    display: inline-block;
+    box-sizing: inherit;
+}
+h2{
+    font-family: 'Segoe UI Light','Segoe WP Light','wf_segoe-ui_light','wf_segoe-ui_normal','Segoe UI','Segoe WP',Helvetica,Tahoma,Arial,sans-serif;
+    font-size: 34px;
+    line-height: 46px;
+    color: #1e1e1e;
+}
+#su-video-section h2{
+    padding-left: 5%;
+    padding-top: 20px;
+    text-align: left;
+    font-weight: 300;
+}
+#su-video-section p, #su-video-section a{
+    padding: 0;
+    padding-left: 5%;
+    font-family: 'Segoe UI','Segoe UI Web','wf_segoe-ui_normal','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1e1e1e;
+
+}
+#su-video-section a{
+    color: #0072c6;
+    text-decoration: none;
+}
+#su-video-section a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#su-more-study *{
+    box-sizing: border-box;
+}
+#su-more-study{
+    box-sizing: border-box;
+    width: 90%;
+    overflow: hidden;
+    padding: 0 10px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+#su-more-study h2{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+.ms-study{
+    width:49%;
+    position: relative;
+    display: inline-block;
+    margin-bottom: calc(1em + .5vh);
+    margin-top: calc(1em + .5vh);
+}
+.ms-study img{
+    width: calc((100% - 6*15px)/2 + 15px - .1px);
+    padding-left: 0;
+    position: relative;
+    min-height: 1px;
+    height: auto;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.ms-study div{
+    width: calc((100% - 6*15px)/2 + 15px - .1px + 15px);
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: calc(1em + .5vh);
+    display: inline-block;
+    vertical-align: top;
+}
+.ms-study div *{
+    font-family: 'Segoe UI','Segoe UI Web','wf_segoe-ui_normal','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1e1e1e;
+}
+.ms-study b{
+    font-weight: 600;
+}
+.ms-study p{
+    padding: 0;
+}
+.ms-study a{
+    color: #0072c6;
+    text-decoration: none;
+}
+.ms-study a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
