@@ -1,9 +1,13 @@
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 #ms-header a{
     padding-top: 0px;
     display: inline-block;
-}
-#su-header{
-    overflow: hidden;
 }
 #ms-nav li a ,#ms-button{
     color: #262626;
@@ -75,7 +79,6 @@
 }
 #su-header-bar{
     background: #0067b8;
-    float: left;
     height: 50px;
     width: 100%;
     padding-left: 5%;
@@ -100,13 +103,13 @@
     font-weight: 200;
 }
 #su-hbar-nav{
-    overflow: hidden;
+    overflow: visible;
     height: 100%;
     white-space: nowrap;
     padding-left: 1px;
     padding-right: 1px;
     display: block;
-    position：relative;
+    position:relative;
 }
 #su-hbar-nav div{
     display: inline-block;
@@ -134,7 +137,7 @@
     border-style: solid;
     border-width: 1px 1px 2px;
     width: 296px;
-    top: 11%;
+    top: 100%;
     z-index: 700;
     min-width: 64px;
     max-width: 368px;
@@ -156,13 +159,13 @@
     padding-bottom: 18px;
     display: block;
 }
-#su-hbar-nav a:hover +ul,#su-hbar-nav a:active +ul{
+#su-hbar-nav a:hover +ul,#su-hbar-nav a:focus +ul{
     display:block;
 }
-#su-hbar-nav a:hover{
+#su-hbar-nav a:hover,#su-hbar-1:hover{
     text-decoration: underline;
 }
-#su-hbar-nav div:hover,#su-hbar-nav li:hover{
+#su-hbar-nav div:hover,#su-hbar-nav li:hover,#su-hbar-1:hover{
     background: #005da6;
 }
 .su-a-af-j span:after{
@@ -343,4 +346,44 @@
     font-weight: 400;
     font-size: 34px;
     line-height: 46px;
+}
+#su-ques-div >div *{
+    box-sizing: border-box;
+}
+#su-ques-div >div{
+    margin-bottom: 30px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 16px;
+    box-sizing: border-box;
+}
+#su-ques-div div div{
+    font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+    font-weight: normal;
+    width: calc((100% - 6*15px)/4 + 15px - .1px);
+    padding-left: 0;
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+#su-ques-div p{
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 0;
+    padding-top: 0;
+    color: #1e1e1e;
+}
+strong, b{
+    font-weight: 600;
+}
+#su-ques-div a{
+    color: #0072c6;
+    text-decoration: none;
+}
+#su-ques-div a:hover{
+    text-decoration: underline;
+}
+#su-video-section{
+    background-color: #f9f9f9;
 }
