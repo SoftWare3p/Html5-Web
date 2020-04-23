@@ -547,7 +547,67 @@ h2{
     color: #0072c6;
     text-decoration: none;
 }
-.ms-study a:hover{
+#su-trlat{
+    background: #f3f3f3;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 3.5%;
+    padding-top: 6px;
+    padding-right: 8%;
+    padding-bottom: 6px;
+}
+#su-trlat p,#su-trlat *{
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Segoe UI','Segoe UI Web','wf_segoe-ui_normal','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif;
+}
+#su-trlat b{
+    line-height: 1.5;
+    font-size: 1em;
+    margin: 20px 0 5px 0;
+    font-weight: 700;
+}
+#su-trlat a,#su-more-su a{
+    color: #0072c6;
+    text-decoration: none;
+}
+.ms-study a:hover, #su-trlat a:hover,#su-more-su a:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+#su-more-su{
+    background-color: #f9f9f9;
+}
+#su-more-su,#su-more-su *{
+    box-sizing: border-box;
+    font-family: 'Segoe UI Semibold','wf_segoe-ui_semibold','wf_segoe-ui_normal','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+}
+#su-more-su >div{
+    width: 90%;
+    overflow: hidden;
+    padding: 0 10px;
+    margin:0 auto;
+}
+#su-more-su h2{
+    color: #1e1e1e;
+    text-align: center;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+#su-more-su >div >div{
+    width: calc((100% - 4*15px)/3 + 15px - .1px);
+    display:inline-block;
+    margin-block-end: 1em;
+}
+#su-more-su a{
+    font-family: 'Segoe UI','Segoe UI Web','wf_segoe-ui_normal','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: normal;
+}
+#su-more-su >div >div:last-child{
+    margin-left: calc((100% - 4*15px)/3 + 15px - .1px);
 }
