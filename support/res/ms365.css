@@ -1,0 +1,138 @@
+#su-search-p{
+    background-color: #0067b8;
+    background-image:none;
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+#su-search-p h1{
+    line-height: 72px;
+    font-size: 44px;
+    font-family: "Microsoft YaHei UI","Segoe UI",Arial,Verdana,sans-serif;
+}
+#su-video-section >div{
+    padding: 40px 0;
+}
+#su-class-p >div >div{
+    width: 141px;
+    height: 122px;
+    padding: 15px;
+}
+#su-class-p >div >div:hover{
+     -webkit-box-shadow:0 3px 5px 3px rgba(0,0,0,.1);
+    -moz-box-shadow:0 3px 5px 3px rgba(0,0,0,.1);
+    box-shadow:03px 5px 3px rgba(0,0,0,.1);
+}
+#su-class-p >div{
+    margin: 48px auto 21px;
+}
+
+.su-class-p:hover{
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+}
+#su-class-more{
+    font-weight: 400;
+    font-size: 13px;
+}
+#su-class-more:after,.su-ms365-item a:last-child:after,#su-m365-ad1:after{
+    content:"\e76c";
+    font-size: 10px;
+    padding-left: 5px;
+    margin-left:0;
+}
+.su-ms365-item{
+    width: calc((100% - 6*15px)/4 + 15px - .1px);
+    padding-left:0;
+    display: inline-block;
+    padding-right: 15px;
+    position: relative;
+    margin-top: calc(1em + .5vh);
+    margin-bottom: 30px;
+}
+.su-ms365-item a:first-child{
+    margin-top: 0;
+    padding-top: 0;
+}
+.su-ms365-item img{
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+.su-ms365-item b{
+    font-family: 'Segoe UI','Segoe UI Web','wf_segoe-ui_normal','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #1e1e1e;
+}
+.su-ms365-item p{
+    font-family: 'Segoe UI','Segoe UI Web','wf_segoe-ui_normal','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1e1e1e;
+}
+.su-ms365-item a:last-child{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-decoration: none;
+    font-family: 'Segoe UI Semibold','wf_segoe-ui_semibold','wf_segoe-ui_normal','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+    font-weight: 400;
+    color: #0072c6;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: .975px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.su-ms365-item a:last-child:after,#su-m365-ad1:after{
+    font-family: "MWF-MDL2";
+    display:inline-block;
+    position: absolute;
+}
+.su-ms365-item a:last-child:hover{
+    text-decoration: underline;
+}
+.su-o365-item{
+    box-sizing: border-box;
+}
+.su-o365-item >div{
+    width: 90%;
+    overflow: hidden;
+    padding: 0 10px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+#su-o365-oo{
+    background-color: #f9f9f9;
+}
+#su-m365-ad1{
+    font-family: 'Segoe UI Semibold','wf_segoe-ui_semibold','wf_segoe-ui_normal','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: .975px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#su-ques-div h2{
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+#ms-footer{
+    margin-top:0;
+}
+#su-ques-div{
+    margin-bottom: 30px;
+}
