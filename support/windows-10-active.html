@@ -3,6 +3,8 @@
     <link rel="SHORTCUT ICON" href="../res/favicon.ico" type="image/x-icon" />
     <link href="../res/style.css" type="text/css" rel="stylesheet" />
     <link href="./res/style.css" type="text/css" rel="stylesheet" />
+    <link href="./res/help.css" type="text/css" rel="stylesheet" />
+    <script src="./res/help.js" type="text/javascript" ></script>
     <body>
         <header id = "su-header">
             <div id = "ms-header" class = "ms-content">
@@ -113,9 +115,290 @@
                     <div> <a href="#">社区</a> </div>
                 </nav>
             </div>
+            <div id = "su-header-bar2">
+                <a href="#">了解如何借助 Microsoft Teams 和 Microsoft 365 保持联系和工作效率，即使在远程办公也是如此 ></a>
+            </div>
         </header>
-        <div>
-            
+        <div id = "su-doc-main">
+            <div id = "su-doc-content">
+                <div id = "su-doc-1">
+                    <h1>激活 Windows 10</h1>
+                    <p id = "su-doc-mainref">适用于： Windows 10</p><hr>
+                    <div class = "su-doc-block"></div>
+                    <p> 激活有助于验证你的 Windows 副本是否为<a herf = "#">正版</a>，且未在超过 Microsoft 软件许可条款所允许数量的设备上使用。</p>
+                    <div class = "su-doc-block"></div>
+                    <h2>检查激活状态</h2><hr>
+                    <div class = "su-doc-block"></div>
+                    <p>首先需要查看 Windows 10 是否已激活并链接到你的 Microsoft 帐户。</p>
+                    <p>将 Microsoft 帐户链接到设备上的 Windows 10 许可证是至关重要的。通过将 Microsoft 帐户与数字许可证链接，可以在进行重大硬件更改时使用“激活”疑难解答程序重新激活 Windows。</p>
+                    <a class = "doc-but" id = "sudoca-section-1" onclick = "click_section('sudoc-section-1'); transvalue('sudoc-section-1','sudoca-section-1');">全部显示</a>
+                    <div class = "sudoc-section" id = "sudoc-section-1" isshow = "false" >
+                        <a class = "sudoc-section-11" isshow = "false" onclick = "click_block('sudoc-section-11');transvalue('sudoc-section-1','sudoca-section-1');">检查激活状态</a>
+                        <div class = "sudoc-section-11" isshow = "false" >
+                            <p>若要查看 Windows 10 的激活状态，请选择<strong>“开始”</strong><span>&#62015;</span>按钮，然后依次选择<strong>“设置”</strong><span>&#59155;</span> > <strong>“更新和安全”</strong><span>&#59541;</span>，然后选择<strong>“激活”</strong><span>&#59696;</span>。你的激活转态会在<strong>“激活”</strong>旁边列出。</p>
+                            <p>你将在“激活”页面上看到以下一条激活状态消息：</p>
+                            <table class = "su-doc-table">
+                                <tr>
+                                    <th>激活状态</th><th>说明</th>
+                                </tr>
+                                <tr>
+                                    <td>Windows 已激活</td>
+                                    <td><ul>
+                                        <li>已激活。</li>
+                                        <li>未链接 Microsoft 帐户。</li>
+                                        <li>按照链接 <a href="#">Microsoft 帐户</a>中的说明进行操作。</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td>Windows 已使用数字许可证激活</td>
+                                    <td><ul>
+                                        <li>已激活。</li>
+                                        <li>Microsoft 帐户未链接到数字许可证。</li>
+                                        <li>按照链接 <a href="#">Microsoft 帐户</a>中的说明进行操作。</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td>Windows 已使用与 Microsoft 帐户关联的数字许可证激活</td>
+                                    <td><ul>
+                                        <li>已激活。</li>
+                                        <li>Microsoft 帐户已链接到数字许可证。</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td>Windows 尚未激活</td>
+                                    <td><ul>
+                                        <li>未激活。</li>
+                                        <li>你将看到对故障进行解释的错误消息。</li>
+                                        <li>你可能需要购买 Windows 10 才能激活。</li>
+                                    </ul></td>   
+                                </tr>
+                            </table>
+                            <div class = "su-doc-block"></div>
+                            <p>如果需要为设备购买许可证，请参阅“购买 Windows 10 许可证”。</p>
+                            <p>如果已为此设备购买了许可证，但仍收到错误消息，请继续前往<a href="#">激活方法</a>。</p>
+                        </div>
+                        <a class = "sudoc-section-12" isshow = "false" onclick = "click_block('sudoc-section-12');transvalue('sudoc-section-1','sudoca-section-1');">链接 Microsoft 帐户</a>
+                        <div class = "sudoc-section-12" isshow = "false" >
+                            <p>若要链接 Microsoft 帐户，请进行以下操作：</p>
+                            <ol>
+                                <li>以管理员身份登录以添加 Microsoft 帐户。若要确认你使用的是否是管理员帐户，请选择<strong>“开始”</strong><span>&#62015;</span>按钮，然后依次选择<strong>“设置”</strong><span>&#59155;</span> > <strong>“帐户”</strong><span>&#59259;</span> > <strong>“你的信息”</strong><span>&#59257;</span>。在你的名字下面，将显示“管理员”。如果你不是管理员，请参阅<a href="#">创建本地用户或管理员帐户</a>。</li>
+                                <li>通过查看<strong>“管理员”</strong>上方是否显示了电子邮件地址，确认管理员帐户是否还是你的 Microsoft 帐户。如果显示了电子邮件地址，则这是 Microsoft 帐户。如果未显示，则表示你已使用本地帐户登录。如果你还没有 Microsoft 帐户，请参阅“<a href="#">如何创建新的 Microsoft 帐户</a>”。</li>
+                                <li>在确认你是管理员并且使用的是 Microsoft 帐户后，返回到<strong>“激活”</strong>页面，选择<strong>“添加帐户”</strong>，输入你的 Microsoft 帐户和密码，然后选择<strong>“登录”</strong>。</li>
+                            </ol>
+                            <p>添加 Microsoft 帐户后，在<strong>“激活”</strong>页面上，你将看到<strong>“Windows 已通过链接到 Microsoft 帐户的数字许可证激活”</strong>。</p>
+                        </div>
+                    </div>
+                    <div class = "su-doc-block"></div>
+                    <div class = "su-doc-block"></div>
+                    <h2>激活方法</h2><hr>
+                    <p>根据你获取 Windows 10 副本的方式，你需要数字许可证或由 25 个字符组成的产品密钥才能激活该副本。如果二者都不具备，则无法激活你的设备。</p>
+                    <ol class = "su-doc-lid">
+                        <li>数字许可证（在 Windows 10 版本 1511 中称为数字授权）是 Windows 10 的一种激活方法，该方法不需要输入产品密钥。 </li>
+                        <li>产品密钥是由 25 个字符组成的代码，用于激活 Windows。你会看到产品密钥：XXXXX-XXXXX-XXXXX-XXXXX-XXXXX。</li>
+                    </ol>
+                    <p>确定使用何种激活方法后，请按照相应的<a href="#">使用数字许可证激活</a>或<a href="#">使用产品密钥激活</a>中的步骤操作。</p>
+                    <a class = "doc-but" id = "sudoca-section-2" onclick = "click_section('sudoc-section-2'); transvalue('sudoc-section-2','sudoca-section-2');">全部显示</a>
+                    <div class = "sudoc-section" id = "sudoc-section-2" isshow = "false" >
+                        <a class = "sudoc-section-21" isshow = "false" onclick = "click_block('sudoc-section-21');transvalue('sudoc-section-2','sudoca-section-2');">我使用的激活方法是数字许可证还是产品密钥？</a>
+                        <div class = "sudoc-section-21" isshow = "false" >
+                            <p>你的激活方法取决于你获取 Windows 10 副本的方式。</p>
+                            <table class = "su-doc-table">
+                                <tr>
+                                    <th>如果你通过以下方式获得 Windows 10...</th>
+                                    <th>激活方法</th>
+                                </tr>
+                                <tr>
+                                    <td>从运行 Windows 7 或 Windows 8.1 正版副本的合格设备免费升级到 Windows 10	数字许可证</td>
+                                    <td>数字许可证</td>
+                                </tr>
+                                <tr>
+                                    <td>从 Microsoft Store 应用购买 Windows 10 专业版升级并成功激活了 Windows 10	数字许可证</td>
+                                    <td>数字许可证</td>
+                                </tr>
+                                <tr>
+                                    <td>成为 Windows 预览体验成员，并在运行已激活的早期 Windows 和 Windows 10 预览版的合格设备上升级到最新的 Windows 10 Insider Preview 内部版本	数字许可证</td>
+                                    <td>数字许可证</td>
+                                </tr>
+                                <tr>
+                                    <td>从 Microsoft Store 应用购买正版 Windows 10 </td>
+                                    <td>数字许可证</td>
+                                </tr>
+                                <tr>
+                                    <td>从授权零售商处购买 Windows 10 的副本</td>
+                                    <td>
+                                        <p>产品密钥</p>
+                                        <p>可在 Windows 10 包装盒内的标签上找到产品密钥。根据所输入的有效产品密钥，将向设备提供 Windows 10 的数字许可证。</p>
+                                        <p>如果你从制造商处购买了电脑，则该制造商（而非 Microsoft）必须提供产品密钥。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>从授权零售商处购买 Windows 10 的数字副本</td>
+                                    <td>
+                                        <p>产品密钥</p>
+                                        <p>可在购买 Windows 10 后收到的确认电子邮件中或在可通过零售商的网站访问的数字保险箱中找到产品密钥。</p>
+                                        <p>根据所输入的有效产品密钥，将向设备提供 Windows 10 的数字许可证。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>具有 Windows 10 或 MSDN 订阅的批量许可协议</td>
+                                    <td>
+                                        <p>产品密钥</p>
+                                        <p>可通过你所参与的计划的 Web 门户找到产品密钥。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>购买一台运行 Windows 10 的新设备或翻新设备</td>
+                                    <td>
+                                        <p>产品密钥</p>
+                                        <p>产品密钥预装在你的设备上、与设备包装附在一起、包含为卡片形式或包含在贴在设备上的真品证书 (COA) 上。</p>
+                                        <p>如果你购买了翻新电脑，则翻新商（而非 Microsoft）必须提供产品密钥。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>从<a>Microsoft Store</a>在线购买</td>
+                                    <td>
+                                        <p>产品密钥</p>
+                                        <p>可在包含订单历史记录的确认电子邮件中找到产品密钥。</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <a class = "sudoc-section-22" isshow = "false" onclick = "click_block('sudoc-section-22');transvalue('sudoc-section-2','sudoca-section-2');">购买 Windows 10 许可证</a>
+                        <div class = "sudoc-section-22" isshow = "false" >
+                            <p>如果你没有数字许可证或产品密钥，可以在安装完成后购买 Windows 10 数字许可证。操作方法如下：</p>
+                            <ol>
+                                <li>选择“开始”&#62015;按钮。</li>
+                                <li>依次选择“设置”&#59155; >“更新和安全”&#59541; >“激活”&#59696;。</li>
+                                <li>选择“转到 Microsoft Store”。</li>
+                            </ol>
+                            <p>该操作会打开 Microsoft Store 应用，你可以在此购买 Windows 10 数字许可证。</p>
+                        </div>
+                    </div>
+                    <div class = "su-doc-block"></div>
+                    <div class = "su-doc-block"></div>
+                    <h2>使用数字许可证激活</h2><hr>
+                    <p>数字许可证与你的硬件关联，并且已链接到你的 Microsoft 帐户，因此无需在电脑上查找任何内容。在你的电脑连接到 Internet，并且你登录到 Microsoft 帐户后，即表示一切就绪。 </p>
+                    <a class = "doc-but" id = "sudoca-section-3" onclick = "click_section('sudoc-section-3'); transvalue('sudoc-section-3','sudoca-section-3');">全部显示</a>
+                    <div class = "sudoc-section" id = "sudoc-section-3" isshow = "false" >
+                        <a class = "sudoc-section-31" isshow = "false" onclick = "click_block('sudoc-section-31');transvalue('sudoc-section-3','sudoca-section-3');">首次在新设备或主板上安装和激活</a>
+                        <div class = "sudoc-section-31" isshow = "false" >
+                            <p>如果你使用的是链接到 Microsoft 帐户的数字许可证，则可以通过选择<strong>“我没有产品密钥“</strong>来运行安装程序并跳过产品密钥选项。当你使用 Microsoft 帐户登录并连接到 Internet 时，则会被激活。</p>
+                        </div>
+                        <a class = "sudoc-section-32" isshow = "false" onclick = "click_block('sudoc-section-32');transvalue('sudoc-section-3','sudoca-section-3');">重新安装 Windows 10 后激活</a>
+                        <div class = "sudoc-section-32" isshow = "false" >
+                            <p>如果你的设备具有数字许可证，则可以在此设备上重新安装同一版本的 Windows 10，而无需输入产品密钥。</p>
+                            <p>请确保在尝试重新安装之前，Windows 10 已激活。若要查看是否已激活，请选择<strong>“开始”</strong><span>&#62015;</span>按钮，然后依次选择<strong>“设置”</strong><span>&#59155;</span> > <strong>“更新和安全”</strong><span>&#59541;</span>，然后选择<strong>“激活”</strong><span>&#59696;</span>。你将能够确认 Windows 10 是否已激活，以及 Microsoft 帐户是否与数字许可证相关联。以下是可能会在“激活”页面上显示的消息：</p>
+                            <table class = "su-doc-table">
+                                <tr>
+                                    <th>激活状态</th>
+                                    <th>说明</th>
+                                </tr>
+                                <tr>
+                                    <td>Windows 已使用数字许可证激活</td>
+                                    <td>Microsoft 帐户未链接到数字许可证。按照有关<a href="#">链接 Microsoft 帐户</a>的说明进行操作。 </td>
+                                </tr>
+                                <tr>
+                                    <td>Windows 已使用与 Microsoft 帐户关联的数字许可证激活</td>
+                                    <td>Microsoft 帐户已链接到数字许可证。</td>
+                                </tr>
+                            </table>
+                            <p>如果 Windows 10 在设备上未激活，请参阅<a href="#">获取有关 Windows 10 激活错误的帮助</a>以获取详细信息。  </p>
+                            <p>如果数字许可证未链接到 Microsoft 帐户，请按照检查激活状态<a href="#">链接 Microsoft 帐户</a>下的步骤进行操作。</p>
+                            <p>链接帐户后，可以运行安装程序来重新安装 Windows 10。有关如何创建安装媒体来重新安装 Windows 10 的详细信息，请转到<a href="#">Microsoft 软件下载网站</a>。创建安装媒体时，请确保选择与已在你的设备上安装的版本匹配的 Windows 10 版本。</p>
+                            <p>在重新安装期间，如果系统要求输入产品密钥，可以通过选择<strong>“我没有产品密钥”</strong>来跳过此步骤。安装完成后，Windows 10 将自动联机激活。如果已将数字许可证与 Microsoft 帐户相链接，请确保登录到与数字许可证相链接的 Microsoft 帐户。</p>
+                        </div>
+                        <a class = "sudoc-section-33" isshow = "false" onclick = "click_block('sudoc-section-33');transvalue('sudoc-section-3','sudoca-section-3');">在更换硬件后重新激活 Windows 10</a>
+                        <div class = "sudoc-section-33" isshow = "false" >
+                            <p>当你对设备进行重大的硬件更换（例如更换主板）时，Windows 10 可能不再处于激活状态。</p>
+                            <p>请确保将 Microsoft 帐户与数字许可证关联，以便准备进行硬件更改。该关联操作可在以后进行重大硬件更换时，允许你使用“激活疑难解答”来重新激活 Windows。有关详细信息，请参阅<a href="#">在更换硬件后重新激活 Windows 10</a>。</p>
+                        </div>
+                        <p>如果没有数字许可证，则可以使用产品密钥进行激活。  </p>
+                    </div>
+                    <div class = "su-doc-block"></div>
+                    <div class = "su-doc-block"></div>
+                    <h2>使用产品密钥激活</h2><hr>
+                    <p>产品密钥是由 25 个字符组成的代码，如下所示：</p>
+                    <p style="padding-left:40px">产品密钥： XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</p>
+                    <p>在安装期间，系统将提示你输入产品密钥。或者，在安装后，若要输入产品密钥，请选择<strong>“开始”</strong>&#62015;按钮，然后依次选择<strong>“更新和安全“</strong>&#59541; > <strong>”激活”</strong>&#59696; > <strong>“更新产品密钥”</strong> > <strong>“更改产品密钥”</strong>。</p>
+                    <p>若要查找产品密钥，请参阅“激活方法”中的产品密钥表，“<a href="#">我使用的激活方法是数字许可证还是产品密钥？</a>” </p>
+                    <div class = "su-doc-attention">
+                        <p>注意</p>
+                        <p>如果你从 Microsoft 在线商店购买，Microsoft 仅保留产品密钥的记录。你可以在 Microsoft 帐户<a href="#">订单历史记录</a>中了解你是否是从 Microsoft 购买的产品。有关更多帮助，请参阅“<a href="#">查找 Windows 产品密钥</a>”。</p>
+                    </div>
+                    <a class = "doc-but" id = "sudoca-section-4" onclick = "click_section('sudoc-section-4'); transvalue('sudoc-section-4','sudoca-section-4');">全部显示</a>
+                    <div class = "sudoc-section" id = "sudoc-section-4" isshow = "false" >
+                        <a class = "sudoc-section-41" isshow = "false" onclick = "click_block('sudoc-section-41');transvalue('sudoc-section-4','sudoca-section-4');">首次在新设备或主板上安装和激活</a>
+                        <div class = "sudoc-section-41" isshow = "false" >
+                            <p>在从未安装过 Windows 10 激活副本的设备上，你需要使用有效产品密钥来激活 Windows 10。</p>
+            如果原始硬件制造商 (OEM) 为你更换了母板，则你的电脑应会自动重新激活。如果未激活，你的 OEM 可能已经提供了带有以黑色涂层覆盖的 25 个字符的密钥的 COA 卡。若要激活，请按照以下步骤操作：                <p>如果你要安装之前未在设备上激活的 Windows 10 版本，则还需要使用有效产品密钥。例如，在安装了 Windows 10 家庭版的设备上，你将需要有效产品密钥来安装和激活 Windows 10 专业版。</p>
+                            <p>在安装期间，系统会要求你输入有效产品密钥。安装完成后，Windows 10 将自动在线激活。若要查看 Windows 10 的激活状态，请选择<strong>“开始”</strong><span>&#62015;</span>按钮，然后依次选择<strong>“设置”</strong><span>&#59155;</span> > <strong>“更新和安全”</strong><span>&#59541;</span>，然后选择<strong>“激活”</strong><span>&#59696;</span>。如果 Windows 10 在设备上未激活，请参阅<a href="#">获取有关 Windows 10 激活错误的帮助</a>以获取详细信息。</p>
+                            <div class = "su-doc-attention">
+                                <p>注意</p>
+                                <p>在某些情况下，可能需要输入 Windows 10 产品密钥，该密钥随附在设备包装中、包含在随附的卡片上，或显示在设备随附的真品证书 (COA) 中。如果你没有 Windows 10 产品密钥，可以在安装过程中购买一个。</p>
+                            </div>
+                        </div>
+                        <a class = "sudoc-section-42" isshow = "false" onclick = "click_block('sudoc-section-42');transvalue('sudoc-section-4','sudoca-section-4');">激活运行 Windows 10 的翻新设备</a>
+                        <div class = "sudoc-section-42" isshow = "false" >
+                            <p>当你购买运行 Windows 10 的翻新设备时，你将需要使用设备随附的真品证书 (COA) 上的产品密钥激活 Windows。 </p>
+                            <p>如果原始硬件制造商 (OEM) 为你更换了母板，则你的电脑应会自动重新激活。如果未激活，你的 OEM 可能已经提供了带有以黑色涂层覆盖的 25 个字符的密钥的 COA 卡。若要激活，请按照以下步骤操作：</p>
+                            <div class = "su-doc-attention">
+                                <p>注意</p>
+                                <p>若要清除遮盖产品密钥的灰色涂层，请使用硬币或指甲轻轻将其刮除。</p>
+                            </div>
+                            <ol>
+                                <li class = "su-doc-li">请选择“开始”<span>&#62015;</span>按钮，然后依次选择“设置”<span>&#59155;</span> >“更新和安全”<span>&#59541;</span>，然后选择“激活”<span>&#59696;</span>。</li>
+                                <li class = "su-doc-li">选择“更改产品密钥”。</li>
+                                <li class = "su-doc-li">键入在真品证书上找到的产品密钥，然后按照说明操作。</li>
+                            </ol>
+                        </div>
+                        <a class = "sudoc-section-43" isshow = "false" onclick = "click_block('sudoc-section-43');transvalue('sudoc-section-4','sudoca-section-4');">在重新安装 Windows 10 后进行激活</a>
+                        <div class = "sudoc-section-43" isshow = "false" >
+                            <p>在重新安装期间，系统会提示你输入产品密钥。在键入产品密钥后，你会获得 Windows 10 的激活版本。</p>
+                            <p>如果已完成设置但未输入产品密钥，你仍然可以输入产品密钥。选择<strong>“开始”</strong><span>&#62015;</span>按钮，然后依次选择<strong>“激活”</strong><span>&#59696;</span> > <strong>“更新产品密钥”</strong> > <strong>“更改产品密钥”</strong>。</p>
+                        </div>
+                        <a class = "sudoc-section-44" isshow = "false" onclick = "click_block('sudoc-section-44');transvalue('sudoc-section-4','sudoca-section-4');">在更换硬件后重新激活 Windows 10</a>
+                        <div class = "sudoc-section-44" isshow = "false" >
+                            <p>当你对设备进行重大的硬件更换（例如更换主板）时，Windows 10 可能不再处于激活状态。</p>
+                            <p>如果未重新安装 Windows，则可以选择<strong>“激活”</strong><span>&#59696;</span> > <strong>“更新产品密钥”</strong> > <strong>“更改产品密钥”</strong>重新激活设备。否则，你可以在 Windows 安装过程中输入产品密钥。</p>
+                            <p>如果原始硬件制造商 (OEM) 为你更换了母板，则你的电脑应会自动重新激活。如果未激活，你的 OEM 可能已经提供了带有以灰色涂层覆盖的含有 25 个字符的密钥的 COA 卡。若要激活，请按照以下步骤操作。</p>
+                            <div class = "su-doc-attention">
+                                <p>注意</p>
+                                <p>若要清除遮盖产品密钥的灰色涂层，请使用硬币或指甲轻轻将其刮除。</p>
+                            </div>
+                            <ol>
+                                <li class = "su-doc-li">请选择“开始”<span>&#62015;</span>按钮，然后依次选择“设置”<span>&#59155;</span> >“更新和安全”<span>&#59541;</span>，然后选择“激活”<span>&#59696;</span>。</li>
+                                <li class = "su-doc-li">选择“更改产品密钥”。</li>
+                                <li class = "su-doc-li">键入在真品证书上找到的产品密钥，然后按照说明操作。</li>
+                            </ol>
+                            <p>有关详细信息，请参阅<a href="#">在更换硬件后重新激活 Windows 10</a>。</p>
+                        </div>
+                    </div>
+                    <div class = "su-doc-block"></div>
+                    <div class = "su-doc-block"></div>
+                    <h2>需要更多信息？</h2><hr>
+                    <a class = "doc-but" id = "sudoca-section-" onclick = "click_section('sudoc-section-'); transvalue('sudoc-section-','sudoca-section-');">全部显示</a>
+                    <div class = "sudoc-section" id = "sudoc-section-" isshow = "false" >
+                        <a class = "sudoc-section-1" isshow = "false" onclick = "click_block('sudoc-section-1');transvalue('sudoc-section-','sudoca-section-');">你的 Windows 10 版本必须与许可证匹配</a>
+                        <div class = "sudoc-section-1" isshow = "false" >
+                        </div>
+                        <a class = "sudoc-section-1" isshow = "false" onclick = "click_block('sudoc-section-1');transvalue('sudoc-section-','sudoca-section-');">激活最新的 Windows 10 Insider Preview</a>
+                        <div class = "sudoc-section-1" isshow = "false" >
+                        </div>
+                    </div>
+                    <div class = "su-doc-block"></div>
+                    <div class = "su-doc-block"></div>
+                    <h2>相关链接</h2><hr>
+                    <ol class = "su-doc-lid" id="su-doc-ref">
+                        <li><p>如果 Windows 10 在设备上未激活，请参阅<a href="#">获取有关 Windows 10 激活错误的帮助</a>。</p></li>
+                        <li><p>如果你需要有关查找产品密钥的帮助，请参阅<a href="#">查找你的 Windows 产品密钥</a>。</p></li>
+                        <li><p>如果你需要帮助辨别你的 Windows 副本是否为正版 Microsoft 软件，请参阅<a href="#">如何辨别真假页面</a>。</p></li>
+                        <li><p>如果需要激活 Microsoft Office，请参阅<a href="#">在电脑或 Mac 上下载并安装或重新安装 Office</a>。</p></li>
+                        <li><p>如果你想要了解 Windows 更新而非 Windows 激活，请参阅<a href="#">更新 Windows 10</a>。</p></li>
+                    </ol>
+                    <hr><p id = "su-doc-mainref">上次更新时间：2019年7月13日</p>
+                    <h1>需要更多帮助？</h1>
+                </div>
+            </div>
         </div>
         <footer id = "ms-footer">
             <div class = "ms-content">
