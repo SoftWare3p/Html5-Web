@@ -45,3 +45,14 @@ function click_section(id){
         setshow(box.children[i],isshow);
     }
 }
+document.onmousewheel = function(){ //不兼容火狐
+    let clientHeight=my$("su-doc-body").scrollHeight - window.screen.height;
+    let footer_h = my$("ms-footer").scrollHeight;//footer 高度
+    var iScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    //console.warn((clientHeight - footer_h)+" "+iScroll);
+    if (iScroll <= (clientHeight - footer_h)) {
+        my$("su-doc-feedback").setAttribute("style","position:fixed;");
+    } else {
+        my$("su-doc-feedback").setAttribute("style","position:relative;");
+    }
+}

@@ -3,10 +3,9 @@
 }
 #su-doc-main{
     position: relative;
-    overflow: hidden;
 }
 #su-doc-content{
-    float: left;
+    display: inline-block;
     width: 83.3333%;
     padding-left: 5%;
     padding-right: 5%;
@@ -86,11 +85,11 @@ body hr {
     width:1px;
     height:18px;
 }
-#su-doc-1 a,.su-doc-question a{
+#su-doc-1 a,.su-doc-question a,#su-doc-tool a{
     text-decoration: none;
     color: #0067b8;
 }
-#su-doc-1 a:hover,.su-doc-question a:hover{
+#su-doc-1 a:hover,.su-doc-question a:hover,#su-doc-tool a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
@@ -259,4 +258,91 @@ div[class ^="sudoc-section-"]{
     letter-spacing: 0;
     line-height: 1.3;
     white-space: nowrap;
+}
+#su-doc-tool{
+    position: fixed;
+    padding: 58px 0 6px;
+    max-width: 250px;
+    width: 15%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#su-doc-tool >div{
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+#su-doc-tool a{
+    display:block;
+    margin-bottom: 10px;
+}
+#su-doc-tool a:before{
+    padding: 0 10px 4px 0;
+    font-family: MWF-MDL2;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+}
+#su-doc-tool a:first-child:before{
+    content:"\e715";
+}
+#su-doc-tool a:nth-child(2):before{
+    content:"\e749";
+}
+#su-doc-tool a:nth-child(3):before{
+    content:"\e874";    
+}
+#su-doc-feedback{
+    padding-bottom: 8px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #cecece;
+    width: 100%;
+    bottom: 0;
+    margin-top: 12px;
+    overflow: hidden;
+}
+#su-doc-feedback >div{
+    padding-left: calc(24px + 5%);
+    padding-right: calc(24px + 5%);
+    width: 83.33333%;
+}
+#su-doc-feedback >div >div{
+    width: calc(100% - 250px);
+    float: right;
+}
+#su-doc-feedback >div >div p{
+    margin-right: 48px;
+    display: inline-block;
+}
+#su-doc-feedback >div >div label{
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 0!important;
+    padding-bottom: 7px;
+    line-height: 20px;
+}
+#su-doc-feedback >div >div label button{
+    min-width: 120px;
+    font-size: 15px;
+    position: relative;
+    border: 2px solid transparent;
+    outline: 0;
+    color: #fff;
+    background-color: #0067b8;
+    padding: 9px 12px 10px;
+    text-align: center;
+    line-height: 1;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 transparent;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+#ms-nav li a{
+    font-weight: normal;
 }
