@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Xbox | 官方网站</title>
-    <link rel="stylesheet" href="header.css" type="text/css">
-    <link rel="icon" href="https://assets.xbox.com/xbcservicewebwww-2003-26151-0-0-main-rolling/shell/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css+js/header.css" type="text/css">
+    <link rel="icon" href="res/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="bodycolumn">
@@ -13,23 +13,23 @@
                 <div class="headin1">
                     <div class="headin2">
                         <div id="mylogo">
-                            <a id="myLogo" href="https://www.microsoft.com">
-                                <img  class="c-image" src="res/myLogo.png" role="presentation" aria-hidden="true">
+                            <a id="myLogo" href="#">
+                                <img  class="c-image" src="res/myLogo.png" >
                                 <span role="presentation" aria-hidden="true" id="word1">Microsoft</span>
                             </a>
                         </div>
                         
                         <div class="xbox-logo">
                             
-                            <a id="xbox-logo-a"  href="https://www.xbox.com/zh-CN/?xr=mebarnav" aria-label="Xbox" itemprop="url" >
-                                    <img id="xbox-logo-image" alt="Xbox" src="https://img-prod-cms-rt-microsoft-com.akamaized.net:443/cms/api/am/imageFileData/RW4ESm?ver=c63e&amp;_=7" role="presentation">
+                            <a id="xbox-logo-a"  href="#" aria-label="Xbox" itemprop="url" >
+                                    <img id="xbox-logo-image" alt="Xbox" src="res/x.png" >
                             </a>
                         </div>
                         <nav id="xiala">
                             <ul id="xiala-ul1">
                                 <li class="menu">
                                     <div>
-                                        <button class="headerbut" type="button" id="button1" aria-expanded="false" >
+                                        <button class="headerbut" type="button" id="button1"  >
                                             游戏
                                         </button>
 
@@ -84,7 +84,7 @@
                                     </div>
                                 </li>
                                 <li class="menu">
-                                    <button class="headerbut" id="button2" type="button"  aria-expanded="false" >
+                                    <button class="headerbut" id="button2" type="button" >
                                         产品系列​
                                     </button>
 
@@ -131,7 +131,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu">
-                                    <button class="headerbut" id="button3" type="button"  aria-expanded="false" >
+                                    <button class="headerbut" id="button3" type="button" >
                                         社区
                                     </button>
 
@@ -156,7 +156,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu">
-                                    <button class="headerbut" type="button" id="button4"  aria-expanded="false" >
+                                    <button class="headerbut" type="button" id="button4"   >
                                         为了一切玩家
                                     </button>
 
@@ -181,7 +181,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu">
-                                    <button class="headerbut" type="button"  id="button5" aria-expanded="false">
+                                    <button class="headerbut" type="button"  id="button5" >
                                         我的Xbox
                                     </button>
 
@@ -226,7 +226,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu">
-                                    <button class="headerbut" type="button" id="button6" aria-expanded="false">
+                                    <button class="headerbut" type="button" id="button6" >
                                         Xbox支持
                                     </button>
 
@@ -276,16 +276,8 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li>
-                                            <a class="menu-ul-a" href="#">
-                                                可玩的游戏
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="menu-ul-a" href="#">
-                                                支持中的新增内容
-                                            </a>
-                                        </li>
+                                        <li><a class="menu-ul-a" href="#">可玩的游戏</a></li>
+                                        <li><a class="menu-ul-a" href="#">支持中的新增内容</a></li>
                                         
                                     </ul>
                                 </li>
@@ -299,7 +291,7 @@
                                     <ul  id="ms-ull">
                                         <li>
                                             <button type = "button" id = "ms-button" role="button">
-                                                <span id="super-soan" style="font-size: 14px;">所有 Microsoft</span>
+                                                <span id="super-soan" style="font-size: 13px;">所有 Microsoft</span>
                                             </button>
                                             <ul id = "ms-button-menu1">
                                             
@@ -365,11 +357,11 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <button id="search" class = "ms-menu1-bt" aria-label="在 Microsoft.com 中搜索" data-bi-dnt="true" data-bi-mto="true">
-                                <span title="在 Microsoft.com 中搜索" role="presentation" style="font-size: 14px;">搜索 </span>
+                            <button id="search" class = "ms-menu1-bt" >
+                                <span id="search_span"  style="font-size: 13px;">搜索 </span><div id="xxx"></div>
                             </button>
-                            <button id="ms-reg" class = "ms-menu1-bt" data-bi-dnt="true" data-bi-mto="true">
-                                <span id="super-span" role="presentation" style="font-size: 14px;">登录</span>
+                            <button id="ms-reg" class = "ms-menu1-bt" >
+                                <span id="super-span"  style="font-size: 13px;">登录</span>
                                 <div id="register"></div>
                             </button>
                         </div>
@@ -413,17 +405,18 @@
                         </ul>
         
                         <ol class="NumberBar">
-                            <!--js里会创建与图片数量相等的按钮放在这里，表示图片的播放序号-->
+                           
                         </ol>
-                        <!--左右焦点-->
+                        <button id="stopbut"><div style="width: 8px; height: 8px; border-radius: 5px; border: 1px solid black; "></div></button>
                         <div id="LRbutton">
                             <span id="leftButton"> < </span>
                             <span id="rightButton"> > </span>
+                            
                         </div>
         
                     </div>
                 </div>
-                <script src="slider.js"></script>
+                <script src="css+js/slider.js"></script>
             </header>
         </div>
 
@@ -468,7 +461,7 @@
                         <li id="block3-li1">
                             
 
-                             <a class="block3-a" href="" tabindex="-1" class="white-c" >
+                             <a class="block3-a" href="luoke.html" tabindex="-1" class="white-c" >
                                         
                                 <img id="block3-img1" src="res/洛克.jpg" alt="">
                                         
@@ -484,19 +477,16 @@
                            
                         </li>
                         <li id="block3-li2">
-                            <a class="block3-a" href="" tabindex="-1" class="white-c" >
+                            <a class="block3-a" href="diguo.html" tabindex="-1" class="white-c" >
                                 <div class="block3-li-a-div" >
                                 </div>        
-                                <!-- <img id="block3-img2" src="../res/悟空.jpg" alt=""> -->
-                                <!-- <picture class="c-image">
-                                    <img srcset="https://compass-ssl.xbox.com/assets/62/a2/62a2bd3a-fb82-4365-8f9c-167aff362f7d.jpg" src="https://compass-ssl.xbox.com/assets/62/a2/62a2bd3a-fb82-4365-8f9c-167aff362f7d.jpg" alt="成为宇宙的希望">
-                                </picture>        -->
+                              
                             </a>
                             <div id="block3-li2-word">
                                 <div id="block3-li2-div">
                                     <h3 class="block3-h3">成为宇宙的希望</h3>
                                  <p class="c-paragraph-1 white-c"></p>
-                                <a href="" class="c-call-to-action c-glyph f-lightweight green white-c" target="_blank">
+                                <a href="wukong.html" class="c-call-to-action c-glyph f-lightweight green white-c" target="_blank">
                                 <span class="block3-span12">了解更多</span>
                                 </div>
                                 </a>
@@ -679,25 +669,25 @@
             
                 <ul class="ft2-ul" >
                     <li>
-                        <a class="c-uhff-link" href="https://support.microsoft.com/zh-cn/contactus" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_ContactUs_nav&quot;,&quot;id&quot;:&quot;n1c4c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}" data-bi-prtnm="support.microsoft.com">与 Microsoft 联系</a>
+                        <a class="c-uhff-link" href="#" >与 Microsoft 联系</a>
                     </li>
                     <li>
-                        <a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_PrivacyandCookies_nav&quot;,&quot;id&quot;:&quot;n2c4c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}" data-bi-prtnm="go.microsoft.com">隐私与 Cookie</a>
+                        <a class="c-uhff-link" href="#" >隐私与 Cookie</a>
                     </li>
                     <li>
-                        <a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_TermsOfUse_nav&quot;,&quot;id&quot;:&quot;n3c4c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}" data-bi-prtnm="go.microsoft.com">使用条款</a>
+                        <a class="c-uhff-link" href="#" >使用条款</a>
                     </li>
                     <li>
-                        <a class="c-uhff-link" href="https://www.microsoft.com/trademarks" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_Trademarks_nav&quot;,&quot;id&quot;:&quot;n4c4c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}" data-bi-prtnm="www.microsoft.com">商标</a>
+                        <a class="c-uhff-link" href="#">商标</a>
                     </li>
                     <li>
-                        <a class="c-uhff-link" href="https://choice.microsoft.com/" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_AboutourAds_nav&quot;,&quot;id&quot;:&quot;n5c4c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}" data-bi-prtnm="choice.microsoft.com">关于我们的广告</a>
+                        <a class="c-uhff-link" href="#" >关于我们的广告</a>
                     </li>
                     <li>
-                        <a class="c-uhff-link" href="http://www.beian.miit.gov.cn/" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_Special_nav&quot;,&quot;id&quot;:&quot;n6c4c1c1m1r1a2&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}" data-bi-prtnm="www.beian.miit.gov.cn">京ICP备09042378号-6</a>
+                        <a class="c-uhff-link" href="#" >京ICP备09042378号-6</a>
                     </li>
                     <li>
-                        <a class="c-uhff-link" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802023178" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_Special_nav&quot;,&quot;id&quot;:&quot;n7c4c1c1m1r1a2&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}" data-bi-prtnm="www.beian.gov.cn">京公网安备 11010802023178</a>
+                        <a class="c-uhff-link" href="#">京公网安备 11010802023178</a>
                     </li>
     
                     <li>© Microsoft 2020</li>
