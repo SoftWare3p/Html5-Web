@@ -1,0 +1,256 @@
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+#box{
+    margin: 0 auto;
+    width:100%;
+    height:100%;
+}
+#header{
+    width:100%;
+    height:50px;
+}
+#headerlogo{
+    margin-left: 0;
+    padding-left: 30px;
+    padding-right: 10px;
+    float: left;
+    height: 20px;
+    margin-top: 1px;
+    width: 121px;
+}
+#headerlogoword{
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(1px,1px,1px,1px) !important;
+    width: 1px !important;
+    height: 1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#header0{
+    margin-left: 70px;
+    float: left;
+    height: 20px;
+    margin-top: 1px;
+    width: 100px;
+}
+.alogo{
+    color: black;
+    text-decoration: none;
+}
+#mslogo{
+    font-weight:bold;
+}
+.header1{
+    margin-left: 70px;
+    float: left;
+    height: 20px;
+    margin-top: 1px;
+    width: 100px;
+}
+.header1>li{
+    list-style: none;
+    float: left;
+}
+.dropdown-content>li{
+    list-style: none;
+}
+ul a{
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #262626;
+    background-color: #f2f2f2;
+}
+/*超链接样式设置*/
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    text-decoration: none;
+}
+/*产品部分下拉菜单实现*/
+.menu{
+    z-index: 10;
+    margin-left: 0;
+    padding-left: 30px;
+    padding-right: 10px;
+    float: left;
+    height: 400px;
+    margin-top: 1px;
+    width: 700px;
+    background-color: #f2f2f2;
+}
+.menu0{
+    margin-left: 8%;
+    margin-right: 0;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    float: left;
+    height: 100%;
+    width: 18%;
+    background-color: #f2f2f2;
+}
+.title{
+    font-weight:bold;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    padding: 0;
+    display: none;
+    position: absolute;
+}
+.header1 .dropdown:hover .dropdown-content{
+    display: block;
+}
+/* */
+#bodypicture{
+    margin: 0 auto;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    float: left;
+}
+#hua{
+    z-index: -20;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#drawpicture{
+    z-index: 10;
+    position: relative;
+    left: 150px;
+    bottom:300px;
+}
+/*  body2部分*/
+#indexbody2{
+
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    float: left;
+}
+.body2word1{
+    text-align: center;
+    font-size: 40px;
+}
+.body2word2{
+    text-align: center;
+    font-size: 20px;
+
+}
+/*body3部分*/
+#indexbody3{
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    float: left;
+}
+.indexbody3-0{
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+.indexbody3picture{
+    text-align: center;
+}
+.indexbody3word{
+    font-weight:bold;
+    font-size: 30px;
+}
+.indexbody3word1{
+    font-size: 15px;
+}
+.indexbody3a1{
+    margin-right: 20px;
+    margin-left: 0;
+    text-align: center;
+    float: left;
+}
+.indexbody3a2{
+    margin-right: 20px;
+    margin-left: 0;
+    text-align: center;
+    float: left;
+}
+/**/
+#indexbody3line{
+    margin-top: 150px;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    float: left;
+}
+#indexbody4line{
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+#indexbody4lineword{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: left;
+}
+#indexbody3lineword{
+    float: left;
+    text-align: center;
+    font-weight:bold;
+    font-size: 20px;
+}
+.indexindexbody3lineword{
+    float: left;
+    text-align: center;
+}
+/*尾页*/
+#indexbody4{
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: #f2f2f2;
+    float: left;
+}
+.indexbody4box{
+    margin-left: 20px;
+    margin-right: 0;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    float: left;
+    height: 100%;
+    width: 15%;
+    background-color: #f2f2f2;
+}
+.indexbody4boxtitle{
+    font-weight:bold;
+    font-size: 15px;
+    background-color: #f2f2f2;
+}
