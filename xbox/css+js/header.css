@@ -149,8 +149,7 @@ white-space: nowrap;
     
     font-size: 13px !important;
 
-    list-style: none;
-    
+    list-style: none;  
     max-width: 268px;
     padding: 0;
     margin: 0;
@@ -191,22 +190,22 @@ white-space: nowrap;
 }
 
 /* 当菜单栏被点击，焦点再菜单栏时，隐藏的下拉菜单显示*/
-#button1:active + #menu-ul,#button1:focus + #menu-ul{
+#button1:focus  + #menu-ul{
     display: block;
 }
-#button2:active + #menu-ul2,#button2:focus + #menu-ul2{
+#button2:focus + #menu-ul2{
     display: block;
 }
-#button3:active + #menu-ul3,#button3:focus + #menu-ul3{
+#button3:focus + #menu-ul3{
     display: block;
 }
-#button4:active + #menu-ul4,#button4:focus + #menu-ul4{
+#button4:focus + #menu-ul4{
     display: block;
 }
-#button5:active + #menu-ul5,#button5:focus + #menu-ul5{
+#button5:focus + #menu-ul5{
     display: block;
 }
-#button6:active + #menu-ul6,#button6:focus + #menu-ul6{
+#button6:focus + #menu-ul6{
     display: block;
 }
 .menu-ul-a{
