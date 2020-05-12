@@ -17,6 +17,9 @@ button{/*消除 button默认样式*/
     background-color: white;
 
 }
+a:hover{
+    text-decoration: underline;
+}
 #headbox ul li{
     list-style-type: none;
 }

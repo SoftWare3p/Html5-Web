@@ -9,8 +9,13 @@ a{
     text-decoration: none;
     color:black;
 }
+a:hover{
+    text-decoration: underline;
+}
 #headmainbox{
     position:relative;
+    display: block;
+    margin-bottom: 10px;
 }
 button{/*消除 button默认样式*/
     border:none;
@@ -63,7 +68,7 @@ button{/*消除 button默认样式*/
     font-size: 15px;
 }
 .dropdown>li:hover #sub_list2>li{
-    margin: 10px;
+    margin-left: 0px;
     font-size: 15px;
 }
 .dropdown>li ul>li:hover{
