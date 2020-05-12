@@ -33,7 +33,7 @@ li{
     margin: 0 !important;
 }
 #header0{
-    margin-left: 80px;
+    margin-left: 70px;
     float: left;
     height: 20px;
     margin-top: 1px;
@@ -47,7 +47,7 @@ li{
     font-weight:bold;
 }
 .header1{
-    margin-left: 10px;
+    margin-left: 70px;
     float: left;
     height: 20px;
     margin-top: 1px;
@@ -116,7 +116,6 @@ a:active{
 }
 .dropdown{
     position: relative;
-    display: inline-block;
 }
 .dropdown-content{
     padding: 0;
@@ -126,85 +125,190 @@ a:active{
 .header1 .dropdown:hover .dropdown-content{
     display: block;
 }
-/* body1部分图加字*/
-#bodypicture{
-    margin: 0 auto;
-    width: 300px;
-    height: 450px;
-    background-color: white;
-    float: left;
-}
-#hua{
-    z-index: -30;
-    margin-top: 10px;
-    width: 100%;
-    height: 100%;
-    float: left;
-}
-#drawpicture{
-    z-index: 10;
-    position: relative;
-    left: 100px;
-    bottom:350px;
-    float: left;
-}
-/*  body2部分*/
-#indexbody2{
-
-    margin-top: 10px;
-    width: 100%;
-    height: 200px;
-    background-color: white;
-    float: left;
-}
-.body2word1{
-    text-align: center;
-    font-size: 40px;
-}
-.body2word2{
-    text-align: center;
-    font-size: 20px;
-
-}
-/*body3部分*/
-#indexbody3{
-    margin-top: 20px;
-    width: 100%;
-    height: 300px;
-    background-color: white;
-    float: left;
-}
-.indexbody3-0{
+/*header1*/
+#header-1{
     margin-top: 0;
-    margin-right: 10px;
-    margin-left: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #003366;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: #33CCFF;
+}
+#header-1-word{
+    font-weight: bold;
+    font-size: 20px;
+}
+/*文字加图部分*/
+#body-1{
+    height: 400px;
+    margin-top: 0;
     margin-bottom: 0;
-    width: 30%;
-    height: 100%;
     background-color: white;
+}
+.body-1-l{
+    height: 330px;
+    width: 50%;
+    margin-top: 70px;
+    margin-bottom: 0;
+    background-color: white;
+    text-align: center;
     float: left;
 }
-.indexbody3picture{
+.body-1-r{
+    height: 400px;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+#body-1-1word1{
+    font-weight: bold;
+    font-size: 45px;
+}
+#body-1-1word2{
+    margin-left: 20px;
+    margin-right: 40px;
     text-align: center;
 }
-.indexbody3word{
-    font-weight:bold;
+/*图片自适应大小*/
+.picturesize{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+/**/
+#body-2{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 170px;
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+#body-2-titlesize{
+    margin-top: 10px;
     font-size: 30px;
 }
-.indexbody3word1{
+#body-2-1{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40%;
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+#body-2-1-color{
+    color: white;
+}
+/*body3*/
+.body-3{
+    height: 500px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+}
+.body-3-1{
+    height: 20%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+}
+.body-3-2{
+    height: 20%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    text-align: center;
+}
+.body-3-2-word{
+    font-weight: bold;
+    font-size: 40px;
+}
+.body-3-3{
+    height: 40%;
+    margin-top: 30px;
+    margin-bottom: 0;
+    background-color: white;
+}
+.body-3-3-s{
+    height: 100%;
+    width: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    float: left;
+}
+.body-3-3-c{
+    height: 100%;
+    width: 20%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    float: left;
+    text-align: center;
+}
+.boyd-3-3-c-h{
+    height: 30%;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    text-align: center;
+}
+.boyd-3-3-c-c{
+    height: 70%;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+}
+.body-3-3-word{
+    font-weight: bold;
+    font-size: 20px;
+}
+/*尾页*/
+#indexbody4{
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: #f2f2f2;
+    float: left;
+}
+.indexbody4box{
+    margin-left: 20px;
+    margin-right: 0;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    float: left;
+    height: 100%;
+    width: 15%;
+    background-color: #f2f2f2;
+}
+.indexbody4boxtitle{
+    font-weight:bold;
     font-size: 15px;
-}
-.indexbody3a1{
-    margin-right: 20px;
-    margin-left: 0;
-    text-align: center;
-    float: left;
-}
-.indexbody3a2{
-    margin-right: 20px;
-    margin-left: 0;
-    text-align: center;
-    float: left;
+    background-color: #f2f2f2;
 }
 /**/
 #indexbody3line{
@@ -232,30 +336,4 @@ a:active{
 .indexindexbody3lineword{
     float: left;
     text-align: center;
-}
-/*尾页*/
-#indexbody4{
-    margin-top: 20px;
-    width: 100%;
-    height: 400px;
-    background-color: #f2f2f2;
-    float: left;
-}
-.indexbody4box{
-    margin-left: 20px;
-    margin-right: 0;
-    margin-top: 0;
-    padding-right: 0;
-    padding-left: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-    float: left;
-    height: 100%;
-    width: 15%;
-    background-color: #f2f2f2;
-}
-.indexbody4boxtitle{
-    font-weight:bold;
-    font-size: 15px;
-    background-color: #f2f2f2;
 }
