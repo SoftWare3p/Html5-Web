@@ -45,26 +45,24 @@ Out.onmouseover = function() {
 
     clearInterval(timeId);
 }
-
+// 暂停js动画，使用flag的值控制轮播动画的暂停与轮播  flag=0：当前是未暂停 flag=1：当前处于暂停状态
+//暂停时，通过clearInterval();实现暂停；
 stopbut.onclick = function(){
     if(flag==0)
     {
-        
         flag=1;
         lrbutton.style.display="block";
-
         clearInterval(timeId);
     }
     else if(flag ==1)
-    {
-        
+    {  
         flag=0;
-        
-        
+
     }
 }
-
-
+//当鼠标移开轮播图片时，判断flag，是否为暂停状态
+//flag=1；处于暂停状态时，继续通过clearInterval();实现暂停；
+//若flag=0；未暂停时，执行轮播
 Out.onmouseout = function () {
     if (flag==1){
         clearInterval(timeId);

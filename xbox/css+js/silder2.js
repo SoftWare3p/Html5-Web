@@ -4,17 +4,16 @@ var lunboUl =  inSide.children[0];
 var arr = lunboUl.children;
 var olnumber = inSide.children[1];
 var olchild = olnumber.children;
-var imgwidth = 1020;
 var current = 0;
 var lrbutton = document.getElementById("LRbutton");
 var rightButton=document.getElementById("rightButton");
 var leftButton=document.getElementById("leftButton");;
 var timeId=10;
-// console.log(arr.length);\
 var isAnimStart = false,lightTest = null;
 var y=0;
 
 
+var imgwidth = 1020;    //一次按钮过3张图，所以imgwidth设为3张图片的宽度
 
 
 for (var i = 0; i < arr.length; i++)
@@ -40,9 +39,6 @@ for (var i = 0; i < arr.length; i++)
 
     lrbutton.style.display="block";
 
-    
-
-    
 rightButton.onclick=function () {
     if (current==0){
         

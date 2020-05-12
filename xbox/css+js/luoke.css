@@ -1255,10 +1255,10 @@ span:hover{
     text-decoration: underline green solid;
 }
 .img-opac{
-    opacity: 1.0;
+    opacity: 1.0;   /*图片亮度*/
    
 }
-.img-opac:hover{
+.img-opac:hover{    /*鼠标经过图片亮度变暗*/
     
     opacity:0.9;
 }

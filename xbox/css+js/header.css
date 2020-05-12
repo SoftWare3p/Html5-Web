@@ -161,16 +161,15 @@ white-space: nowrap;
     width: 150%;
     top: 100%;
     z-index: 10;   
-    display: none;
+    display: none;          /*原先下拉菜单被隐藏*/
     background: #f2f2f2;
     border-color: rgba(0,0,0,.05) rgba(0,0,0,.05) #000;
     margin-top: -2px;
     
 }
-/* #menu-ul li{
-    display: list-item;
-} */
 
+/*
+*/
 #menu-ul li:hover{
     background: #d8d8d8;
 }
@@ -186,12 +185,12 @@ white-space: nowrap;
 #menu-ul5 li:hover{
     background: #d8d8d8;
 }
-#menu-ul5 li:hover{
-    background: #d8d8d8;
-}
+
 #menu-ul6 li:hover{
     background: #d8d8d8;
 }
+
+/* 当菜单栏被点击，焦点再菜单栏时，隐藏的下拉菜单显示*/
 #button1:active + #menu-ul,#button1:focus + #menu-ul{
     display: block;
 }
